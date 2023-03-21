@@ -10,6 +10,7 @@ namespace bai2_4
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("sadf")
         }
     }
 }
