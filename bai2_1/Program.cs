@@ -12,22 +12,23 @@ namespace bai2_1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("<----------------------INPUT---------------------->");
             Console.Write("nhap so nguyen A: ");
             int soA = int.Parse(Console.ReadLine());
 
             Console.Write("nhap so nguyen B: ");
             int soB = int.Parse(Console.ReadLine());
+            Console.WriteLine();
 
-            Console.WriteLine("<--------------------------------------------------->");
-
+            Console.WriteLine("<----------------------OUTPUT--------------------->");
             Console.WriteLine("so nguyen A la {0} va so nguyen B la {1}", soA, soB);
             Console.WriteLine("tong cua so nguyen A va B la {0}", soA + soB);
             Console.WriteLine("hieu cua so nguyen A va B la {0}", soA - soB);
             Console.WriteLine("thuong cua so nguyen A va B la {0}", (double)soA / soB);
             Console.WriteLine("tich cua so nguyen A va B la {0}", soA * soB);
+            Console.WriteLine();
 
-            Console.WriteLine("<--------------------------------------------------->");
-
+            Console.WriteLine("<----------------------END------------------------>");
             Console.WriteLine("nhap phim bat ki de ket thuc");
             Console.ReadKey();
         }
