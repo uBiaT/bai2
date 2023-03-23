@@ -11,16 +11,19 @@ namespace bai2_3
         static void Main(string[] args)
         {
             Console.WriteLine("<----------------------INPUT---------------------->");
-                Console.Write("nhap duong kinh hinh tron (d) (mm): ");
-                double d = double.Parse(Console.ReadLine());
-                double r = d / 2;
-                const double pi = Math.PI;
+                Console.Write("nhap duong kinh hinh tron (don vi do dai): ");
+                double duongKinh = double.Parse(Console.ReadLine());
             Console.WriteLine();
 
             Console.WriteLine("<----------------------OUTPUT--------------------->");
-                Console.WriteLine("ban kinh hinh tron (r) la {0} (mm)", r);
-                Console.WriteLine("chu vi hinh tron (C) la {0} (mm)", Math.Round(r * 2 * pi,2));
-                Console.WriteLine("dien tich hinh tron (S) la {0} (mm2)", Math.Round(Math.Pow(r,2) * pi,2));
+                const double pi = Math.PI;
+                double banKinh = Math.Round((duongKinh / 2 ), 1);
+                double chuVi = Math.Round((banKinh * 2 * pi), 1);
+                double dienTich = Math.Round((Math.Pow(banKinh, 2) * pi), 1);
+
+                Console.WriteLine($"ban kinh hinh tron la {banKinh} (don vi do dai)");
+                Console.WriteLine($"chu vi hinh tron la {chuVi} (don vi do dai)");
+                Console.WriteLine($"dien tich hinh tron la {dienTich} (don vi dien tich)");
             Console.WriteLine();
 
             Console.WriteLine("<----------------------END------------------------>");

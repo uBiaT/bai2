@@ -22,12 +22,14 @@ namespace bai2_4
 
                 Console.Write("nhap diem trung binh HKII: ");
                 double diemHKII = double.Parse(Console.ReadLine());
+
+                double diemTB = Math.Round(((diemHKI + diemHKII * 2) / 3), 1);
             Console.WriteLine();
 
             Console.WriteLine("<----------------------OUTPUT--------------------->");
-                Console.WriteLine($"ho ten hoc sinh: {hoTen}");
+                Console.WriteLine($"hoc sinh: {hoTen}");
                 Console.WriteLine($"lop: {lop}");
-                Console.WriteLine($"diem trung binh ca nam: {Math.Round(((diemHKI+ diemHKII*2)/3),1)}");
+                Console.WriteLine($"diem trung binh ca nam: {diemTB}");
             Console.WriteLine();
 
             Console.WriteLine("<----------------------END------------------------>");

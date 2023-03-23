@@ -14,18 +14,18 @@ namespace bai2_1
         {
             Console.WriteLine("<----------------------INPUT---------------------->");
                 Console.Write("nhap so nguyen A: ");
-                int soA = int.Parse(Console.ReadLine());
-
+                uint soA = uint.Parse(Console.ReadLine());
+            
                 Console.Write("nhap so nguyen B: ");
-                int soB = int.Parse(Console.ReadLine());
+                uint soB = uint.Parse(Console.ReadLine());
+
+                uint tong = (soA + soB);
+                int hieu = (int)(soA - soB);
+                uint tich = (soA * soB);
+                double thuong = Math.Round((double)soA / soB,1);
             Console.WriteLine();
 
             Console.WriteLine("<----------------------OUTPUT--------------------->");
-                int tong = soA + soB;
-                int hieu = soA - soB;
-                int tich = soA * soB;
-                double thuong = Math.Round((double)soA / soB,1);
-
                 Console.WriteLine($"tong cua so nguyen A va B la: {tong}");
                 Console.WriteLine($"hieu cua so nguyen A va B la: {hieu}");
                 Console.WriteLine($"tich cua so nguyen A va B la: {tich}");

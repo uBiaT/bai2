@@ -21,21 +21,26 @@ namespace bai2_6
                 int nam = int.Parse(Console.ReadLine());
 
                 DateTime ngayThangNam = new DateTime(nam, thang, ngay);
+
+                string ngayTruoc = (ngayThangNam.AddDays(-1)).ToString("dd/MM/yyyy");
+            string ngayChon = ngayThangNam.ToString("dd/MM/yyyy");
+                string ngaySau = (ngayThangNam.AddDays(1)).ToString("dd/MM/yyyy");
             Console.WriteLine();
 
             Console.WriteLine("<----------------------OUTPUT--------------------->");
-                Console.WriteLine($"ngay hom truoc la: {(ngayThangNam.AddDays(-1)).ToString("dd/MM/yyyy")}");
-                Console.WriteLine($"ngay ban chon la: {ngayThangNam.ToString("dd/MM/yyyy")}");
-                Console.WriteLine($"ngay hom sau la: {(ngayThangNam.AddDays(1)).ToString("dd/MM/yyyy")}");
+                Console.WriteLine($"ngay hom truoc la: {ngayTruoc}");
+                Console.WriteLine($"ngay ban chon la: {ngayChon}");
+                Console.WriteLine($"ngay hom sau la: {ngaySau}");
             Console.WriteLine();
 
             Console.WriteLine("<----------------------INPUT---------------------->");
                 Console.Write("nhap so ngay ban muon them/bot: ");
                 int n = int.Parse(Console.ReadLine());
+                string ngayCan = (ngayThangNam.AddDays(n)).ToString("dd/MM/yyyy");
             Console.WriteLine();
 
             Console.WriteLine("<----------------------OUTPUT--------------------->");
-                Console.WriteLine($"ngay ban can la: {(ngayThangNam.AddDays(n)).ToString("dd/MM/yyyy")}");
+                Console.WriteLine($"ngay ban can la: {ngayCan}");
             Console.WriteLine();
 
             Console.WriteLine("<----------------------END------------------------>");

@@ -11,21 +11,21 @@ namespace bai2BS_1
         static void Main(string[] args)
         {
             Console.WriteLine("<----------------------INPUT---------------------->");
-            Console.Write("nhap so thu 1: ");
-            int so1 = int.Parse(Console.ReadLine());
+                Console.Write("nhap so thu 1: ");
+                int so1 = int.Parse(Console.ReadLine());
 
-            Console.Write("nhap so thu 2: ");
-            int so2 = int.Parse(Console.ReadLine());
+                Console.Write("nhap so thu 2: ");
+                int so2 = int.Parse(Console.ReadLine());
 
-            Console.Write("nhap so thu 3: ");
-            int so3 = int.Parse(Console.ReadLine());
-            Console.WriteLine();
+                Console.Write("nhap so thu 3: ");
+                int so3 = int.Parse(Console.ReadLine());
+                Console.WriteLine();
 
-            int soLonNhat = Math.Max(Math.Max(so1, so2), so3);
+                int soLonNhat = Math.Max(Math.Max(so1, so2), so3);
             Console.WriteLine();
 
             Console.WriteLine("<----------------------OUTPUT--------------------->");
-            Console.WriteLine($"so lon nhat la: {soLonNhat}");
+                Console.WriteLine($"so lon nhat la: {soLonNhat}");
             Console.WriteLine();
 
             Console.WriteLine("<----------------------END------------------------>");

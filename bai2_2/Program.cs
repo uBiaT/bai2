@@ -11,19 +11,19 @@ namespace bai2_2
         static void Main(string[] args)
         {
             Console.WriteLine("<----------------------INPUT---------------------->");
-                Console.Write("nhap chieu dai canh a (mm): ");
+                Console.Write("nhap chieu dai canh a (don vi chieu dai): ");
                 double a = double.Parse(Console.ReadLine());
 
-                Console.Write("nhap chieu dai canh b (mm): ");
+                Console.Write("nhap chieu dai canh b (don vi chieu dai): ");
                 double b = double.Parse(Console.ReadLine());
             Console.WriteLine();
 
             Console.WriteLine("<----------------------OUTPUT--------------------->");
-                double dienTich = a * b;    
-                double chuVi = (a + b) * 2;
+                double dienTich = Math.Round(a * b , 1);    
+                double chuVi = Math.Round((a + b) * 2 , 1);
 
-                Console.WriteLine($"dien tich hinh chu nhat la {dienTich} (mm2)");
-                Console.WriteLine($"chu vi hinh chu nhat la {chuVi} (mm)");
+                Console.WriteLine($"dien tich hinh chu nhat la {dienTich} (don vi dien tich)");
+                Console.WriteLine($"chu vi hinh chu nhat la {chuVi} (don vi chieu dai)");
             Console.WriteLine();
 
             Console.WriteLine("<----------------------END------------------------>");

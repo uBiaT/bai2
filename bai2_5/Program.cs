@@ -40,13 +40,13 @@ namespace bai2_5
         }
         static void XuatThongTin(nhanVien nv)
         {
-            Console.WriteLine($"ho va ten nhan vien: {nv.hoTen}");
+            Console.WriteLine($"nhan vien: {nv.hoTen}");
 
             Console.WriteLine($"gioi tinh: {nv.gioiTinh}");
 
             Console.WriteLine($"ngay sinh: {nv.ngaySinh}");
 
-            Console.WriteLine($"nam lam viec: {nv.soNam}");
+            Console.WriteLine($"so nam lam viec: {nv.soNam}");
 
             Console.WriteLine($"he so luong: {nv.heSoLuong}");
 
