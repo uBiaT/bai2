@@ -4,26 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace bai2_2
+namespace bai2BS_1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("<----------------------INPUT---------------------->");
-                Console.Write("nhap chieu dai canh a (mm): ");
-                double a = double.Parse(Console.ReadLine());
+            Console.Write("nhap so thu 1: ");
+            int so1 = int.Parse(Console.ReadLine());
 
-                Console.Write("nhap chieu dai canh b (mm): ");
-                double b = double.Parse(Console.ReadLine());
+            Console.Write("nhap so thu 2: ");
+            int so2 = int.Parse(Console.ReadLine());
+
+            Console.Write("nhap so thu 3: ");
+            int so3 = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+            int soLonNhat = Math.Max(Math.Max(so1, so2), so3);
             Console.WriteLine();
 
             Console.WriteLine("<----------------------OUTPUT--------------------->");
-                double dienTich = a * b;    
-                double chuVi = (a + b) * 2;
-
-                Console.WriteLine($"dien tich hinh chu nhat la {dienTich} (mm2)");
-                Console.WriteLine($"chu vi hinh chu nhat la {chuVi} (mm)");
+            Console.WriteLine($"so lon nhat la: {soLonNhat}");
             Console.WriteLine();
 
             Console.WriteLine("<----------------------END------------------------>");

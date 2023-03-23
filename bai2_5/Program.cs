@@ -8,10 +8,10 @@ struct nhanVien
 {
     public string hoTen;
     public string gioiTinh;
-    public DateTime ngaySinh;
+    public string ngaySinh;
+    public int soNam;
     public double heSoLuong;
     public double luongCoBan;
-    public int soNam;
 }
 
 namespace bai2_5
@@ -26,17 +26,17 @@ namespace bai2_5
             Console.Write("nhap gioi tinh: ");
             nv.gioiTinh = Console.ReadLine();
 
-            Console.Write("nhap ngay sinh (MM/dd/yyyy): ");
-            nv.ngaySinh = DateTime.Parse(Console.ReadLine());
+            Console.Write("nhap ngay sinh: ");
+            nv.ngaySinh = Console.ReadLine();
+
+            Console.Write("nhap so nam lam viec: ");
+            nv.soNam = int.Parse(Console.ReadLine());
 
             Console.Write("nhap he so luong: ");
             nv.heSoLuong = double.Parse(Console.ReadLine());
 
             Console.Write("nhap luong co ban: ");
             nv.luongCoBan = double.Parse(Console.ReadLine());
-
-            Console.Write("nhap so nam lam viec: ");
-            nv.soNam = int.Parse(Console.ReadLine());
         }
         static void XuatThongTin(nhanVien nv)
         {
@@ -44,13 +44,13 @@ namespace bai2_5
 
             Console.WriteLine($"gioi tinh: {nv.gioiTinh}");
 
-            Console.WriteLine($"ngay sinh: {(nv.ngaySinh).ToString("MM/dd/yyyy")}");
+            Console.WriteLine($"ngay sinh: {nv.ngaySinh}");
+
+            Console.WriteLine($"nam lam viec: {nv.soNam}");
 
             Console.WriteLine($"he so luong: {nv.heSoLuong}");
 
             Console.WriteLine($"luong co ban: {nv.luongCoBan}");
-
-            Console.WriteLine($"nam lam viec: {nv.soNam}");
 
             if (nv.soNam > 5)
             {

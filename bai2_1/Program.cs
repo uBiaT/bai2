@@ -21,11 +21,15 @@ namespace bai2_1
             Console.WriteLine();
 
             Console.WriteLine("<----------------------OUTPUT--------------------->");
-                Console.WriteLine("so nguyen A la {0} va so nguyen B la {1}", soA, soB);
-                Console.WriteLine("tong cua so nguyen A va B la {0}", soA + soB);
-                Console.WriteLine("hieu cua so nguyen A va B la {0}", soA - soB);
-                Console.WriteLine("thuong cua so nguyen A va B la {0}", (double)soA / soB);
-                Console.WriteLine("tich cua so nguyen A va B la {0}", soA * soB);
+                int tong = soA + soB;
+                int hieu = soA - soB;
+                int tich = soA * soB;
+                double thuong = Math.Round((double)soA / soB,1);
+
+                Console.WriteLine($"tong cua so nguyen A va B la: {tong}");
+                Console.WriteLine($"hieu cua so nguyen A va B la: {hieu}");
+                Console.WriteLine($"tich cua so nguyen A va B la: {tich}");
+                Console.WriteLine($"thuong cua so nguyen A va B la: {thuong}");
             Console.WriteLine();
 
             Console.WriteLine("<----------------------END------------------------>");
