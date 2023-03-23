@@ -15,12 +15,12 @@ namespace bai2_3
                 double duongKinh = double.Parse(Console.ReadLine());
             Console.WriteLine();
 
-            Console.WriteLine("<----------------------OUTPUT--------------------->");
-                const double pi = Math.PI;
-                double banKinh = Math.Round((duongKinh / 2 ), 1);
-                double chuVi = Math.Round((banKinh * 2 * pi), 1);
-                double dienTich = Math.Round((Math.Pow(banKinh, 2) * pi), 1);
+            const double pi = Math.PI;
+            double banKinh = Math.Round((duongKinh / 2 ), 1);
+            double chuVi = Math.Round((banKinh * 2 * pi), 1);
+            double dienTich = Math.Round((Math.Pow(banKinh, 2) * pi), 1);
 
+            Console.WriteLine("<----------------------OUTPUT--------------------->");
                 Console.WriteLine($"ban kinh hinh tron la {banKinh} (don vi do dai)");
                 Console.WriteLine($"chu vi hinh tron la {chuVi} (don vi do dai)");
                 Console.WriteLine($"dien tich hinh tron la {dienTich} (don vi dien tich)");

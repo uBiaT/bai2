@@ -22,9 +22,9 @@ namespace bai2_4
 
                 Console.Write("nhap diem trung binh HKII: ");
                 double diemHKII = double.Parse(Console.ReadLine());
-
-                double diemTB = Math.Round(((diemHKI + diemHKII * 2) / 3), 1);
             Console.WriteLine();
+
+            double diemTB = Math.Round(((diemHKI + diemHKII * 2) / 3), 1);
 
             Console.WriteLine("<----------------------OUTPUT--------------------->");
                 Console.WriteLine($"hoc sinh: {hoTen}");

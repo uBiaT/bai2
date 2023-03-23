@@ -19,10 +19,9 @@ namespace bai2BS_1
 
                 Console.Write("nhap so thu 3: ");
                 int so3 = int.Parse(Console.ReadLine());
-                Console.WriteLine();
-
-                int soLonNhat = Math.Max(Math.Max(so1, so2), so3);
             Console.WriteLine();
+
+            int soLonNhat = Math.Max(Math.Max(so1, so2), so3);
 
             Console.WriteLine("<----------------------OUTPUT--------------------->");
                 Console.WriteLine($"so lon nhat la: {soLonNhat}");

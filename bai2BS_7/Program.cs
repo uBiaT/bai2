@@ -4,26 +4,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace bai2_2
+namespace bai2BS_7
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("<----------------------INPUT---------------------->");
-                Console.Write("nhap chieu dai canh a (don vi chieu dai): ");
-                double a = double.Parse(Console.ReadLine());
-
-                Console.Write("nhap chieu dai canh b (don vi chieu dai): ");
-                double b = double.Parse(Console.ReadLine());
+                Console.Write("nhap ho ten: ");
+                string hoTen = Console.ReadLine();
             Console.WriteLine();
 
-            double dienTich = Math.Round(a * b , 1);    
-            double chuVi = Math.Round((a + b) * 2 , 1);
+            int soLuong = hoTen.Length;
+
+            hoTen = hoTen.Trim();
+
+            string[] tachChuoi = hoTen.Split(' ');
+            Console.WriteLine(tachChuoi.Length); 
+
+            string ho = tachChuoi.First();
+            string ten = tachChuoi.Last();
+            string dem = "";
 
             Console.WriteLine("<----------------------OUTPUT--------------------->");
-                Console.WriteLine($"dien tich hinh chu nhat la {dienTich} (don vi dien tich)");
-                Console.WriteLine($"chu vi hinh chu nhat la {chuVi} (don vi chieu dai)");
+                Console.WriteLine($"ban vua nhap {soLuong} ky tu");
+                Console.WriteLine($"ho: {ho}");
+                Console.WriteLine($"dem: {dem}");
+                Console.WriteLine($"ten: {ten}");
             Console.WriteLine();
 
             Console.WriteLine("<----------------------END------------------------>");

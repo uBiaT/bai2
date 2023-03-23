@@ -21,11 +21,11 @@ namespace bai2_6
                 int nam = int.Parse(Console.ReadLine());
 
                 DateTime ngayThangNam = new DateTime(nam, thang, ngay);
-
-                string ngayTruoc = (ngayThangNam.AddDays(-1)).ToString("dd/MM/yyyy");
-            string ngayChon = ngayThangNam.ToString("dd/MM/yyyy");
-                string ngaySau = (ngayThangNam.AddDays(1)).ToString("dd/MM/yyyy");
             Console.WriteLine();
+
+            string ngayTruoc = (ngayThangNam.AddDays(-1)).ToString("dd/MM/yyyy");
+            string ngayChon = ngayThangNam.ToString("dd/MM/yyyy");
+            string ngaySau = (ngayThangNam.AddDays(1)).ToString("dd/MM/yyyy");
 
             Console.WriteLine("<----------------------OUTPUT--------------------->");
                 Console.WriteLine($"ngay hom truoc la: {ngayTruoc}");
@@ -35,9 +35,10 @@ namespace bai2_6
 
             Console.WriteLine("<----------------------INPUT---------------------->");
                 Console.Write("nhap so ngay ban muon them/bot: ");
-                int n = int.Parse(Console.ReadLine());
-                string ngayCan = (ngayThangNam.AddDays(n)).ToString("dd/MM/yyyy");
             Console.WriteLine();
+
+            int n = int.Parse(Console.ReadLine());
+            string ngayCan = (ngayThangNam.AddDays(n)).ToString("dd/MM/yyyy");
 
             Console.WriteLine("<----------------------OUTPUT--------------------->");
                 Console.WriteLine($"ngay ban can la: {ngayCan}");
