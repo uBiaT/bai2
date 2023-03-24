@@ -79,7 +79,7 @@ namespace bai2_5
 
             Console.WriteLine("<----------------------END------------------------>");
             Console.WriteLine("nhap phim bat ki de ket thuc");
-            Console.ReadKey();
+            Console.ReadKey(); 
         }
         
     }
