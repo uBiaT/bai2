@@ -1,0 +1,8 @@
+C:\Users\uBiaT\Source\Repos\uBiaT\bai2\bai2_4\bin\Debug\bai2_4.exe.config
+C:\Users\uBiaT\Source\Repos\uBiaT\bai2\bai2_4\bin\Debug\bai2_4.exe
+C:\Users\uBiaT\Source\Repos\uBiaT\bai2\bai2_4\bin\Debug\bai2_4.pdb
+C:\Users\uBiaT\Source\Repos\uBiaT\bai2\bai2_4\obj\Debug\bai2_4.csproj.AssemblyReference.cache
+C:\Users\uBiaT\Source\Repos\uBiaT\bai2\bai2_4\obj\Debug\bai2_4.csproj.SuggestedBindingRedirects.cache
+C:\Users\uBiaT\Source\Repos\uBiaT\bai2\bai2_4\obj\Debug\bai2_4.csproj.CoreCompileInputs.cache
+C:\Users\uBiaT\Source\Repos\uBiaT\bai2\bai2_4\obj\Debug\bai2_4.exe
+C:\Users\uBiaT\Source\Repos\uBiaT\bai2\bai2_4\obj\Debug\bai2_4.pdb
